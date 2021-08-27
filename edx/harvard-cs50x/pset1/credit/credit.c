@@ -1,9 +1,10 @@
+#include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
-int is_number(char card[])
+int is_number(string card)
 {
     for (int i = 0; card[i] != '\0'; i++)
     {
@@ -15,43 +16,42 @@ int is_number(char card[])
     return 1;
 }
 
-int luhn(char card[])
+int luhn(string card, int length)
 {
-    long long int llcard = atoll(card);
-    int sum1 = 0, sum2 = 0;
-    for (int i = 0; i < strlen(card); i++)
+    int sum1 = 0, sum2 = 0, i = 0;
+    while (i <= length)
     {
         if (!(i % 2))
         {
-            sum1 += llcard % 10;
+            sum1 += card[length - i] - '0';
         }
         else
         {
-            if (llcard % 10 * 2 >= 10)
+            int tmp = (card[length - i] - '0') * 2;
+            if (tmp >= 10)
             {
-                sum2 += (llcard % 10 * 2) % 10 + 1;
+                sum2 += tmp % 10 + 1;
             }
             else
             {
-                sum2 += llcard % 10 * 2;
+                sum2 += tmp;
             }
         }
-        llcard /= 10;
+        i++;
     }
     return (!((sum1 + sum2) % 10));
 }
+
 int main(void)
 {
     while (1)
     {
-        char card[100];
-        printf("Number: ");
-        scanf("%s", card);
+        string card = get_string("Number: ");
         int length = strlen(card);
         int f = card[0] - '0', s = card[1] - '0';
         if (is_number(card))
         {
-            if (luhn(card))
+            if (luhn(card, length - 1))
             {
                 if (length == 15 && f == 3 && (s == 4 || s == 7))
                 {
@@ -85,5 +85,5 @@ int main(void)
             printf("INVALID\n");
             break;
         }
-    } 
+    }
 }
