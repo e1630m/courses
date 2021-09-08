@@ -1,0 +1,254 @@
+html {
+    font-family: Roboto, arial, sans-serif;
+    background-color: rgba(32, 33, 36, 1);
+}
+
+
+.full-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+}
+
+.top-container {
+    padding: 5px;
+    flex-shrink: 0;
+    width: 100%;
+    min-width: 360px;
+    height: 60px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+
+a.tc {
+    display: inline-block;
+    padding: 5px;
+    margin: 4px;
+}
+
+a.tc:first-of-type {
+    margin-left: 10px;
+}
+
+a.tcr {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: white;
+}
+
+.top-container-right {
+    min-width: auto;
+    color: white;
+    height: 30px;
+    position: relative;
+    transition: box-shadow 250ms;
+    padding-left: 0;
+    float: right;
+    box-sizing: border-box;
+    line-height: normal;
+    flex: 0 0 auto;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.top-container-right-txt-links {
+    margin-top: 1px;
+    display: block;
+}
+
+
+
+.top-container-right-icon-links {
+    display: block;
+    float: right;
+    position: relative;
+    align-items: center;
+}
+
+.tcr-icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 4px;
+    padding: 4px;
+    line-height: normal;''
+}
+
+a.tcr {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+a.app-menu {
+    height: 40px;
+    width: 40px;
+    outline: none;
+    color: #5F6368;
+    opacity: 1;
+    fill: currentColor;
+}
+
+svg.app-menu {
+    display: inline-block;
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+svg.app-menu:hover {
+    background-color: rgba(232,234,237,0.08);
+    border-radius: 50px;
+}
+
+a.signin {
+    background-color: #1A73E8;
+    border: 1px solid transparent;
+    margin-left: 8px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    color: #BDC1C6;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.goog-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+    margin-top: 190px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.goog-logo {
+    min-height: 92px;
+    display: block;
+    height: 100%;
+    margin-top: auto;
+    position: relative;
+}
+
+img.logo {
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: center bottom;
+}
+
+.search-bar {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 8px 0 16px;
+    padding-top: 10px;
+    max-width: 584px;
+    height: 120px;
+}
+
+.search-bar input:hover {
+    box-shadow: 0 0 10px 5px #474948;
+    background-color: rgba(32, 33, 36, 1);
+}
+
+.search-bar input {
+    background-color: transparent;
+    flex: 1;
+    border: 1px solid #5F6368;
+    border-radius: 25px;
+    outline: none;
+    font-size: 15px;
+    color: #000000;
+    height: 44px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    display: flex;
+    background-color: #303134;
+    border: 1px;
+    border-radius: 4px;
+    color: #E8EAED;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0;
+    line-height: 27px;
+    height: 34px;
+    width: 94px;
+    min-width: 94px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="submit"]:hover {
+    box-shadow:0 1px 3px rgba(23,23,23,0.24);
+    background-color:#303134;
+    border:1px solid #5f6368;
+    color:#e8eaed;
+}
+
+input[type="submit"]:focus {
+    border:1px solid #5f6368;
+    outline:none
+}
+
+.mag {
+    display: flex;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+    fill: #9AA0AB;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.voice {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    line-height: 24px;
+}
+
+.bottom-container {
+    position: absolute;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+
+}
