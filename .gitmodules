@@ -4,3 +4,6 @@
 [submodule "edx-harvard-cs50g"]
 	path = edx-harvard-cs50g
 	url = git@github.com:e1630m/edx-harvard-cs50g
+[submodule "edx-harvard-cs50w"]
+	path = edx-harvard-cs50w
+	url = git@github.com:e1630m/edx-harvard-cs50w
