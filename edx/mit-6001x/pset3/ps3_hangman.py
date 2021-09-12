@@ -50,8 +50,7 @@ def isWordGuessed(secretWord, lettersGuessed):
     returns: boolean, True if all the letters of secretWord are in lettersGuessed;
       False otherwise
     '''
-    # FILL IN YOUR CODE HERE...
-
+    return all(c in lettersGuessed for c in secretWord)
 
 
 def getGuessedWord(secretWord, lettersGuessed):
@@ -61,22 +60,21 @@ def getGuessedWord(secretWord, lettersGuessed):
     returns: string, comprised of letters and underscores that represents
       what letters in secretWord have been guessed so far.
     '''
-    # FILL IN YOUR CODE HERE...
+    return ' '.join(c if c in lettersGuessed else '_' for c in secretWord)
 
 
-
-def getAvailableLetters(lettersGuessed):
+def getAvailableLetters(lettersGuessed, l='abcdefghijklmnopqrstuvwxyz'):
     '''
     lettersGuessed: list, what letters have been guessed so far
     returns: string, comprised of letters that represents what letters have not
       yet been guessed.
     '''
-    # FILL IN YOUR CODE HERE...
-    
+    return ''.join(c for c in l if c not in lettersGuessed)
 
-def hangman(secretWord):
+
+def hangman(sW):
     '''
-    secretWord: string, the secret word to guess.
+    sW (str): the secret word to guess.
 
     Starts up an interactive game of Hangman.
 
@@ -94,16 +92,26 @@ def hangman(secretWord):
 
     Follows the other limitations detailed in the problem write-up.
     '''
-    # FILL IN YOUR CODE HERE...
-
-
-
-
+    lG, g, bar = [], 8, '\n------------'
+    good, ng = 'Good guess: ', 'Oops! That letter is not in my word: '
+    guessed = "Oops! You've already guessed that letter: "
+    print('Welcome to the game Hangman!')
+    print('I am thinking of a word that is {} letters long.{}'.format(len(sW), bar))
+    while g and not isWordGuessed(sW, lG):
+        print('You have {} guesses left.'.format(g))
+        print('Available Letters: {}'.format(getAvailableLetters(lG)))
+        tmp = input('Please guess a letter: ')
+        g -= (tmp not in lG and tmp not in sW)
+        print(guessed if tmp in lG else good if tmp in sW else ng, end='')
+        lG += [tmp] if tmp not in lG else []
+        print(getGuessedWord(sW, lG), bar)
+    print('Congratulations, you won!' if isWordGuessed(sW, lG) 
+        else 'Sorry, you ran out of guesses. The word was {}'.format(sW))
 
 
 # When you've completed your hangman function, uncomment these two lines
 # and run this file to test! (hint: you might want to pick your own
 # secretWord while you're testing)
 
-# secretWord = chooseWord(wordlist).lower()
-# hangman(secretWord)
+secretWord = chooseWord(wordlist).lower()
+hangman(secretWord)
