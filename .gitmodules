@@ -10,3 +10,6 @@
 [submodule "edx-harvard-cs50x"]
 	path = edx-harvard-cs50x
 	url = git@github.com:e1630m/edx-harvard-cs50x
+[submodule "edx-w3c-css0x"]
+	path = edx-w3c-css0x
+	url = git@github.com:e1630m/edx-w3c-css0x
