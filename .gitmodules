@@ -1,3 +1,6 @@
 [submodule "edx-mit-6001x"]
 	path = edx-mit-6001x
 	url = git@github.com:e1630m/edx-mit-6001x
+[submodule "edx-harvard-cs50g"]
+	path = edx-harvard-cs50g
+	url = git@github.com:e1630m/edx-harvard-cs50g
