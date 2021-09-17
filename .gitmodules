@@ -61,3 +61,9 @@
 [submodule "coursera-stanford-machine-learning"]
 	path = coursera-stanford-machine-learning
 	url = git@github.com:e1630m/coursera-stanford-machine-learning
+[submodule "coursera-duke-oopijs"]
+	path = coursera-duke-oopijs
+	url = git@github.com:e1630m/coursera-duke-oopijs
+[submodule "coursera-duke-jpasefs"]
+	path = coursera-duke-jpasefs
+	url = git@github.com:e1630m/coursera-duke-jpasefs
