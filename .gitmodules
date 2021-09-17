@@ -58,3 +58,6 @@
 [submodule "edx-w3c-html50x"]
 	path = edx-w3c-html50x
 	url = git@github.com:e1630m/edx-w3c-html50x
+[submodule "coursera-stanford-machine-learning"]
+	path = coursera-stanford-machine-learning
+	url = git@github.com:e1630m/coursera-stanford-machine-learning
