@@ -25,18 +25,6 @@
 [submodule "edx-mit-6002x"]
 	path = edx-mit-6002x
 	url = git@github.com:e1630m/edx-mit-6002x
-[submodule "edx-michigan-dj4e104x"]
-	path = edx-michigan-dj4e104x
-	url = git@github.com:e1630m/edx-michigan-dj4e104x
-[submodule "edx-michigan-dj4e103x"]
-	path = edx-michigan-dj4e103x
-	url = git@github.com:e1630m/edx-michigan-dj4e103x
-[submodule "edx-michigan-dj4e102x"]
-	path = edx-michigan-dj4e102x
-	url = git@github.com:e1630m/edx-michigan-dj4e102x
-[submodule "edx-michigan-dj4e101x"]
-	path = edx-michigan-dj4e101x
-	url = git@github.com:e1630m/edx-michigan-dj4e101x
 [submodule "edx-w3c-js0x"]
 	path = edx-w3c-js0x
 	url = git@github.com:e1630m/edx-w3c-js0x
