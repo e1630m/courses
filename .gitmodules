@@ -49,3 +49,6 @@
 [submodule "edx-gt-cs1331x"]
 	path = edx-gt-cs1331x
 	url = git@github.com:e1630m/edx-gt-cs1331x
+[submodule "edx-michigan-dj4ex"]
+	path = edx-michigan-dj4ex
+	url = git@github.com:e1630m/edx-michigan-dj4ex
