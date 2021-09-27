@@ -37,15 +37,6 @@
 [submodule "edx-michigan-dj4e101x"]
 	path = edx-michigan-dj4e101x
 	url = git@github.com:e1630m/edx-michigan-dj4e101x
-[submodule "edx-gt-cs1331xiii"]
-	path = edx-gt-cs1331xiii
-	url = git@github.com:e1630m/edx-gt-cs1331xiii
-[submodule "edx-gt-cs1331xii"]
-	path = edx-gt-cs1331xii
-	url = git@github.com:e1630m/edx-gt-cs1331xii
-[submodule "edx-gt-cs1331xi"]
-	path = edx-gt-cs1331xi
-	url = git@github.com:e1630m/edx-gt-cs1331xi
 [submodule "edx-w3c-js0x"]
 	path = edx-w3c-js0x
 	url = git@github.com:e1630m/edx-w3c-js0x
