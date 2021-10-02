@@ -52,3 +52,6 @@
 [submodule "coursera-princeton-cos226"]
 	path = coursera-princeton-cos226
 	url = git@github.com:e1630m/coursera-princeton-cos226
+[submodule "coursera-huji-nand2tetris"]
+	path = coursera-huji-nand2tetris
+	url = git@github.com:e1630m/coursera-huji-nand2tetris
