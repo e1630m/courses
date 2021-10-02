@@ -49,3 +49,6 @@
 [submodule "edx-michigan-dj4ex"]
 	path = edx-michigan-dj4ex
 	url = git@github.com:e1630m/edx-michigan-dj4ex
+[submodule "coursera-princeton-cos226"]
+	path = coursera-princeton-cos226
+	url = git@github.com:e1630m/coursera-princeton-cos226
