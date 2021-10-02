@@ -43,9 +43,6 @@
 [submodule "coursera-duke-oopijs"]
 	path = coursera-duke-oopijs
 	url = git@github.com:e1630m/coursera-duke-oopijs
-[submodule "coursera-duke-jpasefs"]
-	path = coursera-duke-jpasefs
-	url = git@github.com:e1630m/coursera-duke-jpasefs
 [submodule "edx-gt-cs1331x"]
 	path = edx-gt-cs1331x
 	url = git@github.com:e1630m/edx-gt-cs1331x
